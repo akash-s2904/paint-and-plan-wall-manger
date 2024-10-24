@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painting Session Booking</title>
+    <link rel="stylesheet" href="/css/book.css">
+</head>
+<body background="E:\web tech project\wallpaperflare.com_wallpaper (2).jpg">
+    <div class="container">
+        <h1>Book Your Painting Session</h1>
+        <form id="booking-form" action="/book" method="POST">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter your phone number" required>
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email Address" required>
+
+            <label for="date">Choose a Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+        <div id="confirmation"></div>
+    </div>
+</body>
+</html>

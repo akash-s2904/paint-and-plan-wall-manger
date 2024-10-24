@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Authentication</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <h2 id="head">Paint & Plan WallManager</h2>
+    <div class5="container-wrapper">
+        <div class="container" id="register-form">
+            <h2>Register</h2>
+            <form action="/register" method="POST">
+                <input type="text" name="fullname" placeholder="Full Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="password" name="password" placeholder="Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                <input type="submit" value="Register">
+            </form>
+        </div>
+        
+        <div class="container" id="login-form">
+            <h2>Login</h2>
+            <form action="/login" method="POST">
+                <input type="email" name="email" placeholder="Email" required aria-label="Email">
+                <input type="password" name="password" placeholder="Password" required aria-label="Password">
+                <input type="submit" value="Login">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
